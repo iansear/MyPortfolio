@@ -12,7 +12,7 @@ app.set('view engine', 'mustache')
 
 app.use('/css', express.static('css'))
 app.use('/pictures', express.static('pictures'))
-
+app.use('/content', express.static('content'))
 app.use('/', portfolioRouter)
 
 app.listen(PORT, () => {
